@@ -1,0 +1,100 @@
+/* ===== Services Page CSS ===== */
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+/* Container */
+.services-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Heading */
+.services h2.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.services h2.heading span {
+    color: #facc15;
+}
+
+/* Service Box */
+.service-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #38bdf8;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Service Info */
+.service-info h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #facc15;
+}
+
+.service-info p {
+    font-size: 1rem;
+    color: #e2e8f0;
+}
+
+/* Buttons inside service-box */
+.service-box .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #38bdf8;
+    color: #0f172a;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.service-box .btn:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .services h2.heading {
+        font-size: 2rem;
+    }
+
+    .service-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .service-info p {
+        font-size: 0.95rem;
+    }
+}
